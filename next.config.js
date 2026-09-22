@@ -5,7 +5,7 @@ const nextConfig = {
       {
         source: '/',
         destination: '/login',
-        permanent: false, // false ensures browsers don't cache this permanently if you change it later
+        permanent: false,
       },
     ];
   },
