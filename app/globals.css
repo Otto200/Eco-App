@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #030508;
+    color: #FFFFFF;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Premium Institutional Glass Panels */
+.premium-surface {
+  background: rgba(10, 14, 22, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+/* Sharp Banking Layout Containers */
+.fintech-panel {
+  background-color: #070A0F;
+  box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.01);
+}
+
+/* Custom Scrollbar for Multi-Tier Navigation Arrays */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
