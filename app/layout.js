@@ -1,17 +1,15 @@
-"use client";
-import { useEffect } from "react";
+// app/layout.js
+export const metadata = {
+  title: 'BANKBUGS|FX Ecosystem',
+  description: 'Premium Trading Dashboard',
+}
 
-export function NotificationInitializer() {
-  useEffect(() => {
-    window.OneSignal = window.OneSignal || [];
-    window.OneSignal.push(() => {
-      window.OneSignal.init({
-        appId: "YOUR_ONESIGNAL_APP_ID_HERE",
-        safari_web_id: "YOUR_SAFARI_WEB_ID_IF_ANY",
-        notifyButton: { enable: false },
-      });
-    });
-  }, []);
-
-  return null;
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body style={{ margin: 0, padding: 0, backgroundColor: '#0B0E14' }}>
+        {children}
+      </body>
+    </html>
+  );
 }
