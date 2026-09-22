@@ -64,7 +64,7 @@ export default function PremiumDashboard() {
   // --- VERIFICATION PAYWALL LAYOUT ---
   if (!profile || !profile.is_active) {
     const activationMessage = encodeURIComponent(`Activate my trading portal. Profile ID: ${user?.id}`);
-    const whatsappLink = `https://wa.me{activationMessage}`;
+    const whatsappLink = `https://wa.me/67576766296{activationMessage}`;
 
     return (
       <main className="flex min-h-screen items-center justify-center bg-[#0B0E14] px-4 font-sans text-white">
