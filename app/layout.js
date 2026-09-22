@@ -1,5 +1,4 @@
-// app/layout.js
-import './globals.css'; // ◄ This injects Tailwind globally!
+import './globals.css';
 
 export const metadata = {
   title: 'BANKBUGS|FX Ecosystem',
@@ -9,7 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body style={{ margin: 0, padding: 0 }}>
+      <body className="bg-[#0B0E14] m-0 p-0 text-white antialiased">
         {children}
       </body>
     </html>
